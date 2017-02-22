@@ -1,0 +1,25 @@
+SELECT * FROM Album JOIN Artist ON Album.ArtistId == Artist.ArtistId
+
+SELECT Results.Name, Results.Title FROM(SELECT * FROM Album JOIN Artist ON Album.ArtistId == Artist.ArtistId) AS "Results" WHERE Name == "AC/DC"
+
+SELECT Track.Name AS "Track Name" ,ArtistAlbum.Name AS "Band Name"  FROM 
+    (SELECT * FROM Artist JOIN Album ON Artist.ArtistId == Album.ArtistId) AS ArtistAlbum
+JOIN
+    Track
+ON Track.AlbumId == ArtistAlbum.AlbumId
+
+WHERE ArtistAlbum.Name LIKE "B%"
+
+ORDER BY Track.Name DESC
+
+
+
+
+
+
+
+SELECT * FROM (SELECT Name, COUNT(Album.Title) AS "Albums" FROM Track 
+                             JOIN Album ON Track.AlbumId == Album.AlbumId
+                             GROUP BY Album.Title
+                             ORDER BY Name)
+WHERE Albums > 1 

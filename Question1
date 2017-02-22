@@ -1,0 +1,2 @@
+SELECT CustomerId AS "ID: ",Country,FirstName ||" "|| LastName AS "FULL NAME" FROM Customer WHERE Country != "USA"
+
