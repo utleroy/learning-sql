@@ -1,0 +1,10 @@
+SELECT Customer.FirstName || " " || Customer.LastName AS "Customer Name",
+              Customer.Country AS "Customer Country",
+              Employee.FirstName || " " ||Employee.LastName AS "Employee Name",
+              Invoice.Total
+FROM Customer
+LEFT OUTER JOIN Employee
+ON Customer.CustomerId == Employee.EmployeeId
+JOIN Invoice
+ON Customer.CustomerID == Invoice.CustomerId
+WHERE Employee.Title == "Sales Support Agent"

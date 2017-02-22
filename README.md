@@ -1,4 +1,4 @@
-# Learning SQL Through Doing
+<!-- # Learning SQL Through Doing
 
 ## Installation of SQLite (if needed)
 
@@ -86,14 +86,14 @@ Install [DB Browser for SQLite](http://sqlitebrowser.org/), which is a free tool
 1. When you're ready to start the exercise, click the tab labeled "Execute SQL", type in your query and run it.
 1. If your query is correct - meaning it returns the data requested - copy and the SQL statement and paste it into the corresponding file for the exercise (_see below_). If your query doesn't return the expected results, try try again.
 
-For each of the following exercises, provide the appropriate query. Yes, even the ones that are expressed in the form of questions. Everything from class and the [Sqlite Documentation](http://www.sqlite.org/) is fair game.
+For each of the following exercises, provide the appropriate query. Yes, even the ones that are expressed in the form of questions. Everything from class and the [Sqlite Documentation](http://www.sqlite.org/) is fair game. -->
 
 <!-- 1. `non_usa_customers.sql`: Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
 1. `brazil_customers.sql`: Provide a query only showing the Customers from Brazil. -->
-1. `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
-1. `sales_agents.sql`: Provide a query showing only the Employees who are Sales Agents.
-1. `unique_invoice_countries.sql`: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
-1. `sales_agent_invoices.sql`: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
+<!-- 1. `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country. -->
+<!-- 1. `sales_agents.sql`: Provide a query showing only the Employees who are Sales Agents. -->
+<!-- 1. `unique_invoice_countries.sql`: Provide a query showing a unique/distinct list of billing countries from the Invoice table. -->
+<!-- 1. `sales_agent_invoices.sql`: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name. -->
 1. `invoice_totals.sql`: Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 1. `total_invoices_{year}.sql`: How many Invoices were there in 2009 and 2011? 
 1. `total_sales_{year}.sql`: What are the respective total sales for each of those years?
