@@ -1,0 +1,5 @@
+SELECT FirstName || " " || LastName AS "Full Name", InvoiceId FROM Employee
+
+JOIN Invoice ON Employee.EmployeeId == Invoice.InvoiceId
+
+WHERE Title == "Sales Support Agent"
