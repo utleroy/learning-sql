@@ -3,7 +3,7 @@ SELECT * FROM Album JOIN Artist ON Album.ArtistId == Artist.ArtistId
 SELECT Results.Name, Results.Title FROM(SELECT * FROM Album JOIN Artist ON Album.ArtistId == Artist.ArtistId) AS "Results" WHERE Name == "AC/DC"
 
 SELECT Track.Name AS "Track Name" ,ArtistAlbum.Name AS "Band Name"  FROM 
-    (SELECT * FROM Artist JOIN Album ON Artist.ArtistId == Album.ArtistId) AS ArtistAlbum
+    (SELECT * 	FROM Artist JOIN Album ON Artist.ArtistId == Album.ArtistId) AS ArtistAlbum
 JOIN
     Track
 ON Track.AlbumId == ArtistAlbum.AlbumId

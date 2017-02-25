@@ -3,7 +3,7 @@ SELECT Customer.FirstName || " " || Customer.LastName AS "Customer Name",
               Employee.FirstName || " " ||Employee.LastName AS "Employee Name",
               Invoice.Total
 FROM Customer
-LEFT OUTER JOIN Employee
+JOIN Employee
 ON Customer.CustomerId == Employee.EmployeeId
 JOIN Invoice
 ON Customer.CustomerID == Invoice.CustomerId
